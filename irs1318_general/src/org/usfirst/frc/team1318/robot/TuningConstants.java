@@ -63,4 +63,7 @@ public class TuningConstants
     //================================================== Autonomous ==============================================================
 
     public static final double DRIVETRAIN_POSITIONAL_ACCEPTABLE_DELTA = 1.0;
+
+    //================================================== Shooter ==============================================================
+    public static final double SHOOTER_WHEEL_VELOCITY = 0;
 }
