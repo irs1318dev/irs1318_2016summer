@@ -65,7 +65,32 @@ public abstract class Driver
                     UserInputDevice.None,
                     UserInputDeviceButton.NONE,
                     ButtonType.Toggle));
-
+            
+            // Operations for the shooter
+            put(
+                Operation.ShooterSpin,
+                new DigitalOperationDescription(
+                    UserInputDevice.None,
+                    UserInputDeviceButton.NONE,
+                    ButtonType.Simple));
+            put(
+                Operation.ShooterSpeed,
+                new AnalogOperationDescription(
+                    UserInputDevice.None,
+                    AnalogAxis.None));
+            put(
+                Operation.ShooterFiringPinExtend,
+                new DigitalOperationDescription(
+                    UserInputDevice.None,
+                    UserInputDeviceButton.NONE,
+                    ButtonType.Simple));
+            put(
+                Operation.ShooterFiringPinRetract,
+                new DigitalOperationDescription(
+                    UserInputDevice.None,
+                    UserInputDeviceButton.NONE,
+                    ButtonType.Simple));
+            
             // Operations for general stuff
             put(
                 Operation.DisablePID,

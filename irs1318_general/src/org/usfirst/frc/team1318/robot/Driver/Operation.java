@@ -13,5 +13,9 @@ public enum Operation
 
     // Other general operations:
     EnablePID,
-    DisablePID,
+    DisablePID, 
+    ShooterSpin,
+    ShooterSpeed,
+    ShooterFiringPinExtend,
+    ShooterFiringPinRetract,
 }
