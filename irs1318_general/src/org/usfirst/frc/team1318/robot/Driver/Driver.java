@@ -79,6 +79,25 @@ public abstract class Driver
                     UserInputDevice.CoDriver,
                     UserInputDeviceButton.BUTTON_PAD_BUTTON_12,
                     ButtonType.Click));
+
+            // Operations for shooter
+            put(
+                Operation.ShooterExtendFiringPin,
+                new DigitalOperationDescription(
+                    UserInputDevice.None,
+                    UserInputDeviceButton.NONE,
+                    ButtonType.Simple));
+            put(
+                Operation.ShooterSpin,
+                new DigitalOperationDescription(
+                    UserInputDevice.None,
+                    UserInputDeviceButton.NONE,
+                    ButtonType.Simple));
+            put(
+                Operation.ShooterSpeed,
+                new AnalogOperationDescription(
+                    UserInputDevice.None,
+                    AnalogAxis.None));
         }
     };
 

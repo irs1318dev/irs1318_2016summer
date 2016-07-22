@@ -63,4 +63,17 @@ public class TuningConstants
     //================================================== Autonomous ==============================================================
 
     public static final double DRIVETRAIN_POSITIONAL_ACCEPTABLE_DELTA = 1.0;
+
+    //================================================== Shooter =================================================================
+    // Velocity PID
+    public static final double SHOOTER_VELOCITY_PID_KP_DEFAULT = 0.0; //0.1
+    public static final double SHOOTER_VELOCITY_PID_KI_DEFAULT = 0.0; //0.0
+    public static final double SHOOTER_VELOCITY_PID_KD_DEFAULT = 0.0; //0.0
+    public static final double SHOOTER_VELOCITY_PID_KF_DEFAULT = 0.0; //1.0
+    public static final double SHOOTER_VELOCITY_PID_KS_DEFAULT = 0.0; //40.0
+
+    public static final double SHOOTER_MAX_POWER_LEVEL = 1.0;
+
+    public static final double SHOOTER_SPEED = 0.0;
+
 }
