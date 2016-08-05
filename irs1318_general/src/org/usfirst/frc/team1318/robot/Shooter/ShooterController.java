@@ -39,17 +39,19 @@ public class ShooterController implements IController
             shooterSpeed = this.driver.getAnalog(Operation.ShooterSpeed);
         }
 
-        shooter.setShooterSpeed(shooterSpeed);
+        this.shooter.setShooterSpeed(shooterSpeed);
 
         boolean extend = false;
         extend = this.driver.getDigital(Operation.ShooterExtendFiringPin);
+
+        this.shooter.extendFiringPin(extend);
     }
 
     @Override
     public void stop()
     {
         // TODO Auto-generated method stub
-        shooter.stop();
+        this.shooter.stop();
     }
 
     @Override
